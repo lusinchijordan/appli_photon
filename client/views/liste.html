@@ -1,0 +1,26 @@
+<div class="col-md-4">
+		<div class="row">
+		<ul class="list-group">
+			<li class="list-group-item" ng-repeat="p in photonliste"id="item{{n._id}}" >
+				<a class="pull-left" ng-href="#!/eleve/{{p._id}}">{{n.nom | uppercase}}&nbsp;{{n.prenom}}</a>
+			</li>
+		</ul>
+		
+		<div data-my-first-dir></div>
+	</div>		
+</div>
+<div class="col-md-8">
+	
+
+	<div class="row">
+		<ul class="list-group">
+			<li class="list-group-item" ng-repeat="n in maliste"id="item{{n._id}}" >
+				<a class="pull-left" ng-href="#!/eleve/{{n._id}}">{{n.nom | uppercase}}&nbsp;{{n.prenom}}</a>
+				<a class="btn btn-xs btn-danger pull-right" ng-click="deleteEleve(n, $index)">supprimer</a>
+				<a class="btn btn-xs btn-danger pull-right" ng-href="#!/eleve/update/{{n._id}}">modifier</a>
+			</li>
+		</ul>
+		
+		<div data-my-first-dir></div>
+	</div>
+</div>

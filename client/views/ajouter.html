@@ -1,0 +1,26 @@
+<div class="row">
+	<form class="form-horizontal" ng-submit="addEleve(eleve)" role="form"> 
+		<div class="form-group">
+			<label for="nom">Nom</label>
+			<input type="text" class="form-control" ng-model="eleve.nom">
+		</div>
+		<div class="form-group">
+			<label for="nom">Prénom</label>
+			<input type="text" class="form-control" ng-model="eleve.prenom">
+		</div>
+		<div class="form-group">
+			<label for="photon">id photon</label>
+			<input type="text" class="form-control" ng-model="eleve.photon">
+		</div>
+		
+
+		<div class="form-group">
+			<label for="contact_mail">Adresse Email</label>
+			<input type="email" class="form-control" ng-model="eleve.contact_mail">
+		</div>
+		
+		<input type="submit" class="btn btn-default btn-primary pull-right" value="Envoyer">
+		
+	</form>
+	
+</div>
